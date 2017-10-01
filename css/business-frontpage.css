@@ -1,0 +1,90 @@
+/*!
+ * Start Bootstrap - Busines Frontpage (http://startbootstrap.com/template-overviews/business-frontpage)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-business-frontpage/blob/master/LICENSE)
+ */
+
+body {
+    padding-top: 54px;
+}
+
+@media (min-width: 992px) {
+    body {
+        padding-top: 56px;
+    }
+}
+
+#home{
+    cursor: pointer;
+}
+#carousel{
+    height: 40vh;
+    min-height: 250px;
+/*background-image: url('images/logo.jpg') center center no-repeat scroll;*/
+background-color:   #e6b0aa  ;
+border-radius: 15px;
+border: 3px #c0392b outset;
+text-align: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+.nav{
+    background-color:   #c0392b  ;
+}
+.dropdown-menu{
+background-color:   #c0392b  ;
+}
+.separador{
+    background-color: white;
+    width: 100%;
+    border-radius: 5px;
+    padding: 0px;
+}
+.separador#red{
+    background-color: #c0392b;
+}
+.card {
+    height: 100%;
+}
+.card-footer{
+   /* background-color: #e6b0aa;*/
+}
+.panel{
+    border: 1px solid grey;
+    border-top: 0px;
+    border-radius: 5px;
+}
+.panel-center{
+    border: 1px solid grey;
+    border-top: 0px;
+    border-radius: 5px;
+    text-align: center;
+}
+.panel-body{
+    border-top: 1px solid grey;
+    border-radius: 5px;
+    padding: 10px;
+}
+aside .panel-body{
+    background-color:#e6b0aa;
+}
+.panel-body#social{
+    background-color:white;   
+}
+.panel-heading{
+    background-color: #c0392b;
+    border-radius:5px;
+    padding: 5px;
+    color: white;
+}
+.precio{
+
+}
+.total{
+    border-top: 1px solid grey;
+}
+footer{
+    border-top: 1px solid grey;
+}

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Primer parcial Programación web para el hogar">
+    <meta name="author" content="Fredy Yamid Arciniegas Ramirez - 1151345">
+
+    <title>ObsequiArte</title>
+<link rel="icon" type="image/png" href="images/icon.png" />
+    <!-- Bootstrap core CSS -->
+   <!-- <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">-->
+
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+   <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+
+    <link href="css/business-frontpage.css" rel="stylesheet">
+    
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="cargar.js"></script>
+    
+  </head>
+
+  <body>
+
+    <!-- Navigation bg-dark -->
+    <nav class="navbar navbar-expand-lg  navbar-dark fixed-top nav">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"><label id="home"><h4>ObsequiArte</h4></label></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="javascript:cargaContenido('quienesSomos.html','get',muestraContenido)">Quienes somos</a>
+            </li>
+            <li class="nav-item dropdown">
+        <a class="dropdown-toggle nav-link" data-toggle="dropdown" href="#">Productos<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          
+          <li class="nav nav-item">
+          <a class="nav-link" href="javascript:cargaContenido('categorias/desayunos.html','get',muestraContenido)">
+          Desayunos sorpresa</a></li>
+          <li class="nav nav-item">
+          <a class="nav-link" href="javascript:cargaContenido('categorias/florales.html','get',muestraContenido)">
+          Arreglos florales</a></li>
+          <li class="nav nav-item">
+          <a class="nav-link" href="javascript:cargaContenido('categorias/peluches.html','get',muestraContenido)">
+          Peluches</a></li>
+          
+        </ul>
+      </li>
+            <li class="nav-item">
+              <a class="nav-link" href="javascript:cargaContenido('contacto.html','get',muestraContenido)">Contacto</a>
+            </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right ml-auto" >
+            <li class="nav-item">
+              <a class="nav-link" href="javascript:cargaContenido('login.html','get',muestraContenido)">Iniciar sesión</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="javascript:cargaContenido('registro.html','get',muestraContenido)">Registrarse</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+<span class="separador"></br></span>
+    <!-- Header with Background Image -->
+    <header >
+      <div class="container">
+            <div class="row"> 
+            <div class="col-12 col-lg-6">   
+                <img class="d-block w-100" src="images/logo.jpg" alt="ObsequiArte">  
+            </div>
+            <!--endcol-->
+            <!--<div class="w-100"></div>-->
+            <div class="col-lg-1"></div>
+            <div class="col-12 col-lg-5">
+              <div id="carousel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                  </br>
+                    <h3>¡Nuestra sonrisa es la suya!</h3>
+                    </br>
+                    <img class="d-block w-100" src="images/slide1.png" alt="Img1">
+                    </br>
+                  </div>
+                  <div class="carousel-item">
+                  </br>
+                     <h3>¡Vivamos regalando emociones!</h3> 
+                     </br>
+                    <img class="d-block w-100" src="images/logo2.jpg" alt="Img2">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--endcol-->
+            </div>
+              <!--siga con su vida-->
+              <div class="row">
+                <span class="separador"></br></span>
+                 <span id="red" class="separador"></br></span>
+                  <span class="separador"></br></span>
+              </div>
+    </div>
+    </header>
+
+    <!-- Page Content -->
+    <div  class="container">
+    <div class="row">
+    <div class="col-12 col-lg-9">
+    <div id="main-content" >
+      <div class="panel">
+    <div class="panel-heading"><h4>Los más vendidos</h4></div>
+    <div class="panel-body">
+      <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-4 my-4">
+          <div class="card">
+            <img class="card-img-top" src="images/d-001.jpg" alt="">
+            <div class="card-body">
+              <h4 class="card-title">Desayuno sorpresa</h4>
+            </div>
+            <div class="card-footer">
+             <a href="#" class="btn btn-danger w-100">Añadir al carrito</a>
+              <a href="javascript:cargaContenido('categorias/productos/d-001.html','get',muestraContenido)"
+               class="btn btn-secondary w-100">Detalles</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4 my-4">
+          <div class="card">
+            <img class="card-img-top" src="images/f-001.jpg" alt="">
+            <div class="card-body">
+              <h4 class="card-title">Arreglo floral</h4>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn btn-danger w-100">Añadir al carrito</a>
+              <a href="javascript:cargaContenido('categorias/productos/f-001.html','get',muestraContenido)"
+               class="btn btn-secondary w-100">Detalles</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4 my-4">
+          <div class="card">
+            <img class="card-img-top" src="images/p-001.jpg" alt="">
+            <div class="card-body">
+              <h4 class="card-title">Baúl del amor</h4>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn btn-danger w-100">Añadir al carrito</a>
+              <a href="javascript:cargaContenido('categorias/productos/p-001.html','get',muestraContenido)"
+               class="btn btn-secondary w-100">Detalles</a>
+            </div>
+          </div>
+        </div>
+        </div>
+        <!--/.main-content-->
+      </div>
+      <!-- /.row -->
+</div>
+</div>
+<!-- /.panel -->
+</div>
+<!-- /.col -->
+<aside class="col-12 col-lg-3">
+<div class="panel-center">
+    <div class="panel-heading"><h5>Buscar</h5></div>
+    <div class="panel-body">
+      <form action="#">
+      <input type="default" class="form-control" id="exampleInputPassword1" placeholder="Ej: Cumpleaños" >
+      </br>
+      <button type="submit" class="btn btn-danger w-100">Buscar</button>
+      </form>
+    </div>
+    </div>
+    <!-- /.panel -->
+    <span class="separador"></br></span>
+    <div class="panel-center">
+    <div class="panel-heading"><h5>Carrito</h5></div>
+    <div class="panel-body">
+      <form action="#"> 
+      <div>
+        <ul class="list-group">
+  <li class="list-group-item"><div class="row"><div class="col-8">No hay elementos</div><div class="col-4">$0.00</div></div></li>
+        </ul> 
+      </div>
+<div class="total">
+      <!--total-->
+      <div class="row">
+      <div class="col-7">
+      <label>Total</label>
+      </div>
+      <div class="col-5">
+      <label id="total">$0.00</label>
+      </div>
+      </div>
+      </div>
+      <button type="submit" class="btn btn-danger w-100">Comprar</button>
+      </form>
+    </div>
+    </div>
+    <!-- /.panel -->
+<span class="separador"></br></span>
+    <div class="panel-center">
+    <div class="panel-heading"><h5>Redes sociales</h5></div>
+    <div id="social" class="panel-body">
+    <div class="row">
+      <div class="col">
+          <a href="#" target="_blank">
+          <img class="d-block w-100" src="images/facebook.png" alt="Img1">
+          </a>
+        </div>
+        <div class="col-6 ">
+          <a href="#" target="_blank">
+          <img class="d-block w-100" src="images/twiter.jpg" alt="Img1">
+          </a>
+        </div>
+    </div>    
+    </div>
+    </div>
+    <!-- /.panel -->
+</aside>
+<!-- /.col -->
+</div>
+<!-- /.row -->
+    </div>
+    <!-- /.container -->
+<span class="separador"></br></span>
+    <!-- Footer -->
+    <footer class="py-5 bg-white">
+      <div class="container">
+      <div class="row align-items-center">
+        <div class="col col-lg-4">
+        <a href="http://www.mintic.gov.co/portal/604/w3-channel.html" target="_blank">
+          <img class="d-block w-100" src="images/gov.jpg" alt="Img1">
+          </a>
+        </div>
+        <div class="col col-lg-2">
+        <a href="http://www.codaltec.com/" target="_blank">
+          <img class="d-block w-100" src="images/codaltec.png" alt="Img1">
+          </a>
+        </div>
+        <div class="col col-lg-1">
+          <img class="d-block w-100" src="images/alidao-mintic.png" alt="Img1">
+        </div>
+        <div class="col col-lg-2">
+        <a href="http://www.cccucuta.org.co/" target="_blank">
+          <img class="d-block w-100" src="images/ccc.jpg" alt="Img1">
+          </a>
+        </div>
+        <div class="col col-lg-3">
+          <a href="https://ww2.ufps.edu.co/" target="_blank">
+          <img class="d-block w-100" src="images/ufps.jpg" alt="Img1">
+          </a>
+        </div>
+      </div>
+        <p class="m-0 text-center text-black">Todos los derechos reservados © 2017</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+  <!--  <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/popper/popper.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>-->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+  </body>
+
+</html>
